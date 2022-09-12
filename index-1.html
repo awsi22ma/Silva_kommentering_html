@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- definiera att delta dokument är ett html5 dokument! -->
+<html lang="sv">
+  <!-- det är rotelement på html sida! -->
+<head>
+  <!-- head elementen innehåller data införmation om html sida! -->
+  <meta charset="utf-8">
+  <!-- taggen meta definiera data information om ett html  dokument ange teckenkodningen för HTML-dokumentet! -->
+  <title>Exempel 1</title>
+  <!-- definiera dokumets titel! -->
+</head>
+  <!-- stänger data införmation! -->
+<style>
+  <!-- lägger till stilar till ett element! -->
+   h1 {
+    <!-- definiera en stor rubrik -->
+        text-align:center;
+        <!-- anger den horisontella justeringen av text i ett element! -->   
+        font-size:300%;
+         <!--definierar textstorleken för ett html element! -->
+}
+    #myHeader {
+    <!-- peakar på id namnet "myheader"att kunna utformas enligt "myheader"stildefinitionen! -->
+  background-color: lightblue;
+  <!-- anger bakgrundsfärgen! -->
+  color: black;
+  <!.. färgen på texten! ..>
+  padding: 40px;
+  <!--ställ in utfyllnaden för alla fyra sidorna! -->
+  text-align: left;
+  <!-- anger den horisontela justeringen av text-->
+
+    }
+    table 
+    <!-- en tabell består av tabellceller inuti rader och kolumner! -->
+    {
+
+  font-family: arial, sans-serif;
+  <!-- anger teckensnittet för ett element! -->
+  border-collapse: collapse;
+  <!-- anger om tabellkanter skar kollapsa till en enda ram! -->
+  width: 100%;
+  <!-- anger bredden på element! -->
+    }
+td, th 
+<!-- td definiera innehållet i tabellcellen! -->
+<!-- th definiera en rubrik i tabellen! -->
+    {
+  border: 1px solid #dddddd;
+  <!--lägger en kantlinje till tabellen! -->
+  text-align: left;
+  <!-- anger den horizontella justeringen av tex i det element! -->
+  padding: 8px;
+  <!-- ett elements utfyllnaden för alla fyra sidorna av th,td element till 8 pixlar! -->
+    }
+
+tr:nth-child(even) {
+  <!-- anger bakgrunds färger för jämna tr elementen! -->
+  background-color: #dddddd;
+  <!-- anger bakgrunds färgerför jämna tr element!  -->
+}
+</style>
+stänger stilen
+<body>
+  <!-- definierar dokuments kropp! -->
+
+ 
+  <h1>Att kommentera koden</h1>
+  <!-- definierar en stor och viktigaste rubrik! -->
+  <h2>Du ska i denna uppgift kommentera koden till denna sidan.</h2>
+  <!-- definierar mindre viktiga rubriken än h1! -->
+  <h3>Det är viktigt att du är tydlig i din beskrivning så det är lätt för alla att förstå vad du menar.</h3>
+ <!-- definierar minst vitiga rubriken! -->
+  <p>Det är viktigt att vara kommunikativ så slipper vi en massa missförstånd.<br>
+  Det här är <strong>lite mer text</strong> på en ny rad.</p>
+ <!-- definiera en stycke! -->
+  <p id="myHeader">Ibland vill man dela upp texten för att den ska bli lättare att läsa och kanske förstarka vissa saker som är viktiga!</p><br>
+  <p>För att underlätta för läsare kan det vara bra att dela upp information:</p>
+ <!--peakar på en specifik stildeklaration i en stil mall myheader! -->
+  <ol>
+    <!-- definierar en ordnad lista! -->
+    <li>Första - det är viktigt att vi tänker på vem som ska ha användning för vår sida när vi skriver den.</li>
+    <!-- definierar en lista objeckt! -->
+    <li>Andra - så är användningen av olika färger viktigt för att användaren tydligt ska se det den behöver.</li>
+    <!-- definierar en lista objeckt! -->
+    <li>Tredje - ger vi förmycket information på en gång kan det bli svårt att hitta den info man söker.</li>
+    <!-- definierar en lista objeckt! -->
+    <lh><h2>Bra länkar</h2></lh>
+    <!-- definierar en viktiga rubrik! -->
+    <li><a href="https://validator.w3.org/">Validering av kod.</a> När vi programmerat html så kan vi gå in på w3Cs hemsida och validera den så vi inte gjort några missar.</li>
+    <!-- definierar en oordnade lista! -->
+    <li><a href="https://www.arkitektkopia.se/akademi/stark-budskapet-med-komplementfarger/">Komplementfärger</a> hjälper oss så att det vi vill ha fram blir tydligare.</li>
+    <!-- definierar en oordnade lista! -->
+  </ul>
+  <!-- stänger listan! -->
+ 
+  <table>
+    <!-- en tabell består av tabellceller inuti rader och kolumner! -->
+
+    <tr>
+      <!-- varje tabell rad börjar med tr och slutar /tr-->
+      <th>Andra sätt att dela upp information</th>
+      <!-- definierar en rubrik i tabellen!-->
+      <th>För att det ska bli lättare att hitta</th>
+      <!-- definierar en rubrik i tabellen!-->
+    </tr>
+    <tr>
+      <!-- en ny rad i tabelen! -->
+      <td>data1</td>
+      <!-- definerar inehållet i tabellcellen!-->
+      <td>data2</td>
+      <!-- definerar inehållet i tabellcellen!-->
+    </tr> 
+    <!-- stänger raden! -->
+    <tr>
+      <!-- en ny rad i tabelen! -->
+      <td>data3</td>
+      <!-- definerar inehållet i tabellcellen!-->
+      <td>data4</td>
+      <!-- definerar inehållet i tabellcellen!-->
+    </tr>
+    <!-- stänger raden! -->
+  </table>
+ <!-- stänger tabellen!-->
+ 
+  <img src="tradgard1.jfif" alt="trädgård" width="400">
+  <!-- bädda in en bild! -->
+  <img src="https://kampanj.expressen.se/ikea/wp-content/uploads/2021/12/v1.jpg" alt="sovrum" width="250">
+  <!-- bädda in en bild! -->
+ 
+  <form>
+    <!-- skapat ett HTML formulär för användarinmatning! -->
+    First name: <input type="text" name="fname"><br>
+    <!--definiera ett enrads inmatningsfält för textinmatning! -->
+    Last name:<input type="text" name="lname"><br>
+    <!--definiera ett enrads inmatningsfält för textinmatning! -->
+    <select>
+      <!--definierarför att skapa en rullgardinslista!-->  
+      <option value="volvo">Volvo</Option>
+      <option value="saab">Saab</Option>
+    </select>
+    <!--stänger listan! -->  
+    <input type="submit" value="Knapp">
+    <!--definiera ett enrads inmatningsfält för textinmatning! -->
+  </form> 
+  <!-- stänger formulär! -->  
+
+</body>
+<!-- stänger dokumenten!-->
+</html>
+<!-- stänger html sidan!-->
